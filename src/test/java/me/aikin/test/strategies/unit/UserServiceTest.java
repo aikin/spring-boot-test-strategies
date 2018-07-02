@@ -1,6 +1,6 @@
 package me.aikin.test.strategies.unit;
 
-import me.aikin.test.strategies.services.UserService;
+import me.aikin.test.strategies.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

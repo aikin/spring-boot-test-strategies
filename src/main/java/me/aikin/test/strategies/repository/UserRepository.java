@@ -1,15 +1,16 @@
 package me.aikin.test.strategies.repository;
 
-import me.aikin.test.strategies.model.User;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import me.aikin.test.strategies.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-@Mapper
-public interface UserRepository {
-    @Select("SELECT * FROM user WHERE id = #{userId}")
-    User findOne(Long userId);
+import java.util.Optional;
 
-    @Insert("INSERT into user(ID, USERNAME, CREATED_AT) VALUES(#{id}, #{userName}, #{createdAt})")
-    void insert(User user);
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByUsernameOrEmail(String username, String email);
+
+    Boolean existsByUsername(String username);
+
+    Boolean existsByEmail(String email);
 }

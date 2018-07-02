@@ -2,8 +2,8 @@ package me.aikin.test.strategies.component;
 
 
 import me.aikin.test.strategies.resource.AboutController;
-import me.aikin.test.strategies.services.AboutService;
-import me.aikin.test.strategies.services.UserService;
+import me.aikin.test.strategies.service.AboutService;
+import me.aikin.test.strategies.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;

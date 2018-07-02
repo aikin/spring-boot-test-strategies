@@ -1,4 +1,4 @@
-package me.aikin.test.strategies.services;
+package me.aikin.test.strategies.service;
 
 import org.springframework.stereotype.Service;
 

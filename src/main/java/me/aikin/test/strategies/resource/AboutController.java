@@ -1,7 +1,7 @@
 package me.aikin.test.strategies.resource;
 
-import me.aikin.test.strategies.services.AboutService;
-import me.aikin.test.strategies.services.UserService;
+import me.aikin.test.strategies.service.AboutService;
+import me.aikin.test.strategies.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
