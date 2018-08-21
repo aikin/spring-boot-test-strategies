@@ -19,7 +19,7 @@ public class UserServiceTest {
     }
 
     @Test
-    public void should_return_about_when_call_about() {
+    public void should_return_user_name() {
         assertEquals("aikin", userService.getUserName());
     }
 }
